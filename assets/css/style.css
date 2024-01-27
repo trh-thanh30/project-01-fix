@@ -142,7 +142,8 @@ a{
 /* need fix width */
 .hero-img{
     position: absolute;
-    right: calc((100vw - 1110px) / 2 - 100px);
+    right: calc((100vw - 1110px) / 2 - 80px);
+    overflow: hidden;
     bottom: 0;
 }
 
@@ -286,7 +287,8 @@ a{
     margin-left: 8px;
 }
 .featured .list{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 70px;
 }
@@ -581,7 +583,7 @@ a{
 }
 
 .footer .row-frist{
-    gap: 185px;
+    column-gap: 185px;
 }
 
 .footer .heading{

@@ -1,0 +1,220 @@
+/* PC */
+@media screen  and (min-width: 992px){
+    .mobile-header{
+        display: none;
+    }
+    .hide-on-pc{
+        display: none;
+    }
+}
+
+/* Tablet & mobile */
+@media screen  and (max-width: 991px){
+    .navbar{
+        position: relative;
+    }
+    .navbar .logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header__navbar-item {
+        display: none;
+    }
+    .toggle-menu svg{
+        width: 24px;
+        color: #666;
+    }
+    .menu-overlay{
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+    }
+    .menu-drawer{
+        padding: 60px;
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 3;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+    }
+    .menu-drawer ul{
+        margin-top: 32px;
+    }
+    .menu-drawer ul a{
+        padding: 14px 0;
+        color: #333;
+        display: block;
+        font-weight: 500;
+    }
+    .menu-checkbox:checked ~ .menu-overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-checkbox:checked ~ .menu-drawer{
+        transform: translateX(0);   
+    }
+    .separate{
+        border-top: 1px solid #ebebeb;
+    }
+    .hero-img{
+        display: none;
+    }
+    .hero-wrap .infor {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .hero-wrap .desc{
+        width: 80%;
+        margin: 30px auto auto;
+    }
+    .clients .imges{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .guide-item{
+        flex: 1;
+        margin: 0;
+    }
+
+    .featured .list{
+        grid-template-columns:1fr 1fr ;
+    }
+    .stats .row{
+        flex-direction: column;
+    }
+    .stats .img-block,
+    .stats .info{
+    width: 100%;
+    }
+    .stats .img-block{
+        order: 2;
+        margin-top: 80px;
+    }
+    .stats .info{
+        order: 1;
+        padding: 0;
+    }
+    .stats .sub-title{
+        width: 70%;
+    }
+    .stats .info .desc {
+        width: 100%;
+    }
+    .stats .row-quantity{
+        flex-direction: row;
+    }
+    .stats .quantity{
+        font-size:5rem ;
+    }
+    .stats .quantity-desc{
+        font-size: 1.5rem;
+    } 
+    .subcription .image{
+        display: none;
+    }
+    .footer .row-frist{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        row-gap: 80px;
+    }
+}
+
+/* Tablet */
+@media screen  and (min-width: 768px) and (max-width: 991px){
+    .hide-on-tablet{
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen  and (max-width: 767px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .menu-drawer{
+        inset: 0 25% 0 0;
+        padding: 40px;
+    }
+    .navbar .action{
+        display: none;
+    }
+    .hero-wrap{
+        height: calc(100vh - 80px);
+    }
+    .hero-wrap .title{
+        margin-top: 20px;
+        font-size: 4.2rem;
+    }
+    .hero-wrap .desc{
+        width: 100%;
+    }
+    .hero-btn{
+        margin-top: 32px;
+    }
+    .clients .imges {
+        row-gap: 20px;
+    }
+    .list-guide{
+        flex-direction: column;
+        row-gap: 60px;
+    }
+    .guide-cta{
+        margin-top: 60px;
+    }
+    .guides{
+        padding-bottom: 30px;
+    }
+    .featured .link{
+        display: none;
+    }
+    .featured .list{
+        grid-template-columns: 1fr;
+    }
+    .featured .view-all{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .stats .sub-title{
+        width: 100%;
+    }
+    .stats .img-block .imgae-stats{
+        width: 100%;
+    }
+    .stats-trend{
+        top: -1px;
+    }
+    .stats .row-quantity{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 60px;
+    }
+    .stats{
+        padding-bottom: 38px;
+    }
+    .subcription .info{
+       padding: 32px;
+    }
+    .subcription .body{
+        height: auto;
+    }
+    .footer .row-frist{
+        grid-template-columns: 1fr;
+    }
+    .footer .row-second{
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 81px;
+    }
+    .copyright{
+        margin-top: 24px;
+    }
+}
